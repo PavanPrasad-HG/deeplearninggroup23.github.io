@@ -1,3 +1,14 @@
+## Structure
+- Background
+- Intro
+- Explaining the data: Pavan
+- Explanation (General architecture: TCN: Marcus, Triplet loss: Marnix, Haars: Tishar, LGBM classifier: Tishar)
+- Approach taken (Same architecture but Data missing -> Cross-validation: Pavan, What do we have / Assumptions used: Marcus)
+- Results / If it doesn't work -> our process so far / where we got stuck 
+- Discussion (can't replicate)
+
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/PavanPrasad-HG/deeplearninggroup23.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
