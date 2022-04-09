@@ -42,7 +42,7 @@ Pavan...
 
 ### Model assumptions
 The structure of our TCN was chosesn as follows: 
-We have 5 TCN blocks in total. Each block has a 2x(1D Convolution --> Chomp(remove extra padding) --> Relu --> Dropout). The input of each block has 38 channels, so one for each input signal. The rest of the parameters are:
+We have 5 TCN blocks in total. Each block has a 2x (1D Convolution --> Chomp(remove extra padding) --> Relu --> Dropout). The input of each block has 38 channels corresponding to each input signal and the final output also has 38 channels. The rest of the parameters used are:
 
 - Kernel size = 16
 - Padding = 2
@@ -50,6 +50,13 @@ We have 5 TCN blocks in total. Each block has a 2x(1D Convolution --> Chomp(remo
 - Dropout = 0.1
 
 .....Maybe make picture for visualization?.....
+
+
+## Results
+
+
+
+## Discussion
 
 
 ## Welcome to GitHub Pages
