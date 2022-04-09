@@ -8,7 +8,9 @@
 - Discussion (can't replicate)
 
 ## Introduction
-Some background info....
+Overview of whole model:
+
+![Image](Model.png)
 
 
 ## Dataset
@@ -23,17 +25,18 @@ The neural network used in this paper is a Temporal Convolutional Networks. This
 
 ![Image](TCN_layer.png)
 
-**Triplet loss**
+### Triplet loss
 
 Marnix...
 
-**Haars**
+### Haars
 
 Tishar...
 
-**LGBM**
+### LGBM
 
 Tishar
+
 
 ## Approach taken
 
