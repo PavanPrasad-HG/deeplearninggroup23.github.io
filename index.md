@@ -44,7 +44,7 @@ Pavan...
 The structure of our TCN was chosesn as follows: 
 We have 5 TCN blocks in total. Each block has a 2x(1D Convolution --> Chomp(remove extra padding) --> Relu --> Dropout). The input of each block has 38 channels, so one for each input signal. The rest of the parameters are:
 
-- Kernel size = 3
+- Kernel size = 16
 - Padding = 2
 - Stride = 1
 - Dropout = 0.1
