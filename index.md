@@ -10,7 +10,13 @@
 ## Introduction
 Some background info....
 
+## Dataset
+Pavan....
 
+## Network Architecture
+
+**TCN**
+The neural network used in this paper is a Temporal Convolutional Networks. This network makes use multiple 1D fully convolutional network stacked on top of each other. A key characteristic of the TCN is that each ouput at time _t_ is only convolved with elements which are before _t_. In practise this means the last element in the series can see the whole series from the beginning. 
 
 
 
