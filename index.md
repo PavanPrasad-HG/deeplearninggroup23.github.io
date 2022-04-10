@@ -78,7 +78,7 @@ The input of each block has 38 channels corresponding to each input signal and t
 This is how the whole TCN sequence looks like:
 
 <p align="center">
-<img src= TCN_sequence.png/ width=40% height=40%>
+<img src= TCN_sequence.png/ width=75% height=75%>
 </p>
 
 
