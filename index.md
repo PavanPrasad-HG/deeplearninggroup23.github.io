@@ -23,7 +23,12 @@ To achieve this goal,we design a customized deep learning architecture that leve
 
 ## Dataset
 
-Pavan....
+The dataset used was collected froma driving simulator built by Nervtech that is demonstrated to reproduce an environment that invokes realistic driver reactions. 
+
+The original dataset used by the paper contained a dataset where each driver spent approximately 15 minutes on the simulator, accumulating to more than 15 hours of driving in total. However, the entire dataset was unavailable for recreation and a sample dataset containing 10 seconds of data of each driver is available. Hence, complete recreation of the paper becomes impossible but a try of that is attempted.
+
+The dataset is divided into groups to assess the impact of each group on the performance of the model. Pandas dataframe is used to load the model and divide into the sub-groups.
+
 
 ## Network Architecture
 
@@ -45,10 +50,10 @@ Tishar
 
 ## Approach taken
 
-### Data processing
+#### Data processing
 Pavan...
 
-### Model assumptions
+#### Model assumptions
 The structure of our TCN was chosesn as follows: 
 We have 5 TCN blocks in total. Each block has a 2x (1D Convolution --> Chomp(remove extra padding) --> Relu --> Dropout). The input of each block has 38 channels corresponding to each input signal and the final output also has 38 channels. The rest of the parameters used are:
 
