@@ -27,9 +27,12 @@ The dataset used was collected froma driving simulator built by Nervtech that is
 
 The original dataset used by the paper contained a dataset where each driver spent approximately 15 minutes on the simulator, accumulating to more than 15 hours of driving in total. However, the entire dataset was unavailable for recreation and a sample dataset containing 10 seconds of data of each driver is available. Hence, complete recreation of the paper becomes impossible but a try of that is attempted.
 
-The dataset is divided into groups to assess the impact of each group on the performance of the model. Pandas dataframe is used to load the model and divide into the sub-groups.
+The dataset is divided into groups as shown in the below figure to assess the impact of each group on the performance of the model. Pandas dataframe is used to load the model and divide into the sub-groups.
 
-
+<p align="center">
+<img src= Dataset_groups.png/>
+</p>
+  
 ## Network Architecture
 
 ### TCN
