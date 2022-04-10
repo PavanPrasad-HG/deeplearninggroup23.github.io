@@ -39,7 +39,9 @@ The dataset is divided into groups as shown in the below figure to assess the im
 
 The neural network used in this paper is a Temporal Convolutional Networks. This network makes use multiple 1D fully convolutional network stacked on top of each other. A key characteristic of the TCN is that each ouput at time _t_ is only convolved with elements which are before _t_. In practise this means the last element in the series can see the whole series from the beginning. The following image shows how this structure looks.
 
-![Image](TCN_layer.png)
+<p align="center">
+<img src= TCN_layer.png/ width=70% height=70%>
+</p>
 
 ### Triplet loss
 The Loss function used for the TCN is triplet loss. With this loss function the reference input called the anchor <img src="https://render.githubusercontent.com/render/math?math=x_a"> is compared with a matching positive pair <img src="https://render.githubusercontent.com/render/math?math=x_p"> and a matching negative pair <img src="https://render.githubusercontent.com/render/math?math=x_n">. This is done by feeding these data points through the current model and computing the distance between the anchor and its matching outputs. The loss is then defined as:
