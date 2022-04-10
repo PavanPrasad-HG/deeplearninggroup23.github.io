@@ -42,7 +42,8 @@ The neural network used in this paper is a Temporal Convolutional Networks. This
 ![Image](TCN_layer.png)
 
 ### Triplet loss
-Marnix...
+The Loss function used for the TCN is triplet loss. With this loss function the reference input called the anchor is compared with a matching positive pair and a matching negative pair. This is done by feeding these data points through the current model and computing the distance between the anchor and its matching outputs. With this loss you want to minimize the distance between the anchor and the positive and maximize the distance betweeen the anchor and the negative.
+
 
 ### Haars
 Tishar...
