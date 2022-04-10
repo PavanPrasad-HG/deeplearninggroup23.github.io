@@ -8,7 +8,15 @@
 - Discussion (can't replicate)
 
 ## Introduction
-Overview of whole model:
+### Background:
+With privacy taking a center stand in all identification operations, alternative methods for driver identification have gained importance over time. 
+Drivers’ use of turn indicators, following distance, rate of acceleration, etc. can be transformed to an embedding that is representative of their behavior and identity as it is very individualistic when compared to each driver. 
+
+We try to harness this in order to create digital fingerprint of a driver based on these behaviors to assist in driver identification. But, drivers behave differently according to changing conditions and different road types and hence lot of training data is required to develop a highly capable system.The goal of the trained model is to detect the driver based on a short 10 second snippet of driving data. 
+
+To achieve this goal,we design a customized deep learning architecture that leverages the advantages of temporal convolution with cross-correlation, the Haar wavelet transform, triplet loss and gradient boosted decision trees’. We train this model on a dataset of driving data collected from a driving simulator designed by Nervtech, a high-end driving simulation company.
+
+### Overview of whole model:
 
 ![Image](Model.png)
 
