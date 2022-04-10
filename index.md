@@ -44,9 +44,9 @@ The neural network used in this paper is a Temporal Convolutional Networks. This
 ### Triplet loss
 The Loss function used for the TCN is triplet loss. With this loss function the reference input called the anchor $x_a$ is compared with a matching positive pair $x_p$ and a matching negative pair $x_n$. This is done by feeding these data points through the current model and computing the distance between the anchor and its matching outputs. The loss is then defined as:
 
-$l(x_a,x_p,x_n) = max(0,D^2_{ap} - D^2_{an} + \alpa)$
+$$l(x_a,x_p,x_n) = max(0,D^2_{ap} - D^2_{an} + \alpa)$$
 
-Here $\alpha$ is the margin and D is the distance. In this model, the loss optimization objective is then to achieve $D_{ap} \gg D_{an}$.
+Here $$\alpha$$ is the margin and D is the distance. In this model, the loss optimization objective is then to achieve $$D_{ap} \gg D_{an}$$.
 
 
 ### Haars
