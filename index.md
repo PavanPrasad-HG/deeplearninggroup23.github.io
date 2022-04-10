@@ -63,14 +63,20 @@ Pavan...
 
 #### Model assumptions
 The structure of our TCN was chosesn as follows: 
-We have 5 TCN blocks in total. Each block has a 2x (1D Convolution --> Chomp(remove extra padding) --> Relu --> Dropout). The input of each block has 38 channels corresponding to each input signal and the final output also has 38 channels. The rest of the parameters used are:
+We have 5 TCN blocks in total. Each block contains 2 times a 1D Convolution, Chomp(remove extra padding), Relu and Dropout. A visual representation is seen in the image below:
+
+![Image](TCN_block.png)
+
+The input of each block has 38 channels corresponding to each input signal and the final output also has 38 channels. Each channels has 10 seconds of driver data which amounts to a 1000 data points. The rest of the parameters used are:
 
 - Kernel size = 16
 - Padding = 2
 - Stride = 1
 - Dropout = 0.1
 
-.....Maybe make picture for visualization?.....
+This is how the whole TCN sequence looks like:
+
+![Image](TCN_sequence.png)
 
 
 ## Results
