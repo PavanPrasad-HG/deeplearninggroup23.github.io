@@ -42,7 +42,7 @@ The neural network used in this paper is a Temporal Convolutional Networks. This
 ![Image](TCN_layer.png)
 
 ### Triplet loss
-The Loss function used for the TCN is triplet loss. With this loss function the reference input called the anchor $x_a$ is compared with a matching positive pair $x_p$ and a matching negative pair $x_n$. This is done by feeding these data points through the current model and computing the distance between the anchor and its matching outputs. The loss is then defined as:
+The Loss function used for the TCN is triplet loss. With this loss function the reference input called the anchor <img src="https://render.githubusercontent.com/render/math?math=x_a"> is compared with a matching positive pair <img src="https://render.githubusercontent.com/render/math?math=x_p"> and a matching negative pair <img src="https://render.githubusercontent.com/render/math?math=x_n">. This is done by feeding these data points through the current model and computing the distance between the anchor and its matching outputs. The loss is then defined as:
 
 <img src="https://render.githubusercontent.com/render/math?math=l(x_a,x_p,x_n) = max(0,D^2_{ap} - D^2_{an}+\alpha)">
 
