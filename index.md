@@ -1,3 +1,17 @@
+## TASK DIVISION
+**CODE**
+- LGBM (Pavan)
+- Wavelet + FC layers (Tishar)
+
+**BLOG**
+- Explain data split (Pavan)
+- Update model layout (Marcus)
+- Results
+- Dicussion: Not enough data, Decrease or split channels (Marnix)
+
+
+
+
 ## Structure
 - Background
 - Intro
