@@ -65,7 +65,7 @@ The Loss function used for the TCN is triplet loss. With this loss function the 
 Here <img src="https://render.githubusercontent.com/render/math?math=\alpha"> is the margin and <img src="https://render.githubusercontent.com/render/math?math=D"> is the distance. In this model, the loss optimization objective is then to achieve <img src="https://render.githubusercontent.com/render/math?math=D^2_{ap} \gg D^2_{an}">.
 
 ### Haars
-Tishar...
+The haar wavelet transform is used as a method of indexing time series. Also known as DB1. This method is often better than discrete Fourier transform. The advantage it has over fourier transform is temporal resolution. It captures both frequency and  location information (location in time).  We use a Haar wavelet transformation to generates two vectors in the frequency domain. These vectors are cA and cD. Here cA is approximation coefficients vector and cD  is detail coefficients vector of the discrete wavelet transform The haar wavelet returns a tuple of cA and cD. Other application of Haar wavelet are de-noising and compression of signals and images. 
 
 ### LGBM
 Tishar
