@@ -76,9 +76,6 @@ Tishar
 
 ## Approach taken
 
-#### Data processing
-Pavan...
-
 #### Model assumptions
 The structure of our TCN was chosesn as follows: 
 We have 5 TCN blocks in total. Each block contains 2 times a 1D Convolution, Chomp(remove extra padding), Relu and Dropout. A visual representation is seen in the image below:
