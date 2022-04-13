@@ -46,7 +46,10 @@ The dataset is divided into groups as shown in the below figure to assess the im
 <p align="center">
 <img src= Dataset_groups.png/>
 </p>
-  
+
+The dataset is further constructed as triplets(x<sub>r</sub>, x<sub>p</sub> and x<sub>n</sub>) as required in triplet loss. Here x<sub>r</sub> denotes an anchor point, x<sub>p</sub> denotes a positive sample of the same driver as x<sub>r</sub>,x<sub>r</sub>  
+
+
 ## Network Architecture
 
 ### TCN
