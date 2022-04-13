@@ -47,7 +47,12 @@ The dataset is divided into groups as shown in the below figure to assess the im
 <img src= Dataset_groups.png/>
 </p>
 
-The dataset is further constructed as triplets(x<sub>r</sub>, x<sub>p</sub> and x<sub>n</sub>) as required in triplet loss. Here x<sub>r</sub> denotes an anchor point, x<sub>p</sub> denotes a positive sample of the same driver as x<sub>r</sub>,x<sub>r</sub>  
+The dataset is further constructed as triplets(x<sub>r</sub>, x<sub>p</sub> and x<sub>n</sub>) as required in triplet loss. Here x<sub>r</sub> denotes an anchor point, x<sub>p</sub> denotes a positive sample of the same driver as x<sub>r</sub>, and x<sub>n</sub> a negative sample from a different driver.
+In order to achieve that, we use the code attached below.
+
+<p align="center">
+<img src= triplet_data_split_code.png/ width=70% height=70%>
+</p>
 
 
 ## Network Architecture
@@ -66,6 +71,8 @@ The Loss function used for the TCN is triplet loss. With this loss function the 
 <img src="https://render.githubusercontent.com/render/math?math=l(x_a,x_p,x_n) = max(0,D^2_{ap} - D^2_{an}+\alpha)">
 
 Here <img src="https://render.githubusercontent.com/render/math?math=\alpha"> is the margin and <img src="https://render.githubusercontent.com/render/math?math=D"> is the distance. In this model, the loss optimization objective is then to achieve <img src="https://render.githubusercontent.com/render/math?math=D^2_{ap} \gg D^2_{an}">.
+
+
 
 ### Haars
 The haar wavelet transform is used as a method of indexing time series. Also known as DB1. This method is often better than discrete Fourier transform. The advantage it has over fourier transform is temporal resolution. It captures both frequency and  location information (location in time).  We use a Haar wavelet transformation to generates two vectors in the frequency domain. These vectors are cA and cD. Here cA is approximation coefficients vector and cD  is detail coefficients vector of the discrete wavelet transform The haar wavelet returns a tuple of cA and cD. Other application of Haar wavelet are de-noising and compression of signals and images. The vectors from Haar wavelet is then used as an input to a fully connected linear layer. The output then gets concatenated with the TCN output and fed to the  LightGBM classifier.
