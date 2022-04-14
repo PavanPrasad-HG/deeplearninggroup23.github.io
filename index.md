@@ -138,6 +138,8 @@ The github repository can be found here: <a href="https://github.com/MarnixE/DL_
 ## Discussion and Conclusion
 As can be seen from the results, we were not able to fully replicate the paper. This is because for the replication, we only had a snippet of the full dataset. To account for this, both the model and input data were altered. Namely, for the model a simpler version was selected as it would be more prone to overfitting on this small amount of data. Likwise, the input data was split into 2 seconds instead of the ten seconds used in the paper. This resulted in less variation between the different input data. Which made the classification more trivial, as the testing data is very similar to the training data (there can only be a maximum of 8 seconds of difference between the tested datapoint and the training datapoint). However, as the model complexity is decreased and there is fewer training data, the performance of the model still decreased. 
 
+Likewise, as can be seen from the ablation study. The results vary a lot per excluded group. We believe this is caused by the hyperparameters not being optimized for the limited dataset that we use. The hyperparameters used are similar to the paper as we wanted to replicate the paper as close as possible. However, as this resulted in the somewhat random accuracy score the non of the original papers performance claims could be verified.
+
 
 
 ## Individual Contributions
