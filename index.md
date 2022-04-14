@@ -1,10 +1,10 @@
 ### Group 23
-<ol>
-  <li>Pavan Prasad H.G. (5508053) - <p.p.h.guruprasad@student.tudelft.nl> </li>
-  <li>Marnix Enting (4659147) - <m.f.g.enting@student.tudelft.nl></li>
-  <li>Marcus Malak (4451570) - <m.m.h.g.malak@student.tudelft.nl></li>
-  <li>Tishar Sinha (5277876) - <T.Sinha-2@student.tudelft.nl></li>
-</ol>
+
+* Pavan Prasad H.G. (5508053) - <p.p.h.guruprasad@student.tudelft.nl> </li>
+* Marnix Enting (4659147) - <m.f.g.enting@student.tudelft.nl></li>
+* Marcus Malak (4451570) - <m.m.h.g.malak@student.tudelft.nl></li>
+* Tishar Sinha (5277876) - <T.Sinha-2@student.tudelft.nl></li>
+
 
 ## TO DO
 - Table with results
