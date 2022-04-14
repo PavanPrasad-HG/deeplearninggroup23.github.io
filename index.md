@@ -134,7 +134,7 @@ epochs = .....
 ## Results
 At the moment we are able to train the model but unfortunately there is an issue with the computation of the loss. It seems the losses very large and the network is never able to optimize. Upon inspection of the outputs we think it'd due to the weights getting very large. 
 
-The github repository can be found here: https://github.com/MarnixE/DL_reproducibility
+The github repository can be found here: <a href="https://github.com/MarnixE/DL_reproducibility" title="Link to the repo"> https://github.com/MarnixE/DL_reproducibility</a>.
 
 
 ## Discussion and Conclusion
