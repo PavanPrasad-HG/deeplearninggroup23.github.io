@@ -101,7 +101,7 @@ LightGBM grows tree leaf-wise while other algorithms grow level-wise. It will ch
 </p>
  -->
 The hyperparemeter used in the classifier are:-
-![Image](levewise.PNG)
+![Image](hyperparam.PNG)
 <!-- <p align="center">
 <img src= hyperparam.PNG/ width=40% height=40%>
 </p> -->
