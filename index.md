@@ -85,9 +85,10 @@ After training the embedded model the LightGBM classifier is used to classify am
 - Support of parallel and GPU learning
 - Faster training speed an high effeciency.
 - Can handle large size of data
+
 LightGBM grows tree vertically while other tree based learning algorithms grow trees horizontally. It means that LightGBM grows tree leaf-wise while other algorithms grow level-wise. It will choose the leaf with max delta loss to grow. When growing the same leaf, leaf-wise algorithm can reduce more loss than a level-wise algorithm.
 ![Image](leafwise.PNG)
-![Image](levelwise.PNG)
+![Image](levewise.PNG)
 
 
 
