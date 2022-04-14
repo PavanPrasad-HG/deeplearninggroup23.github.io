@@ -101,7 +101,7 @@ We have 5 TCN blocks in total. Each block contains 2 times a 1D Convolution, Cho
 <img align="center" src= "TCN_block.png" alt = "TCN block" style="height: 600px; width:400px;"/>
 
 
-The input of each block has 38 channels corresponding to each input signal and the final output also has 38 channels. Each channels has 10 seconds of driver data which amounts to a 1000 data points. The rest of the parameters used are:
+The input of each block has 38 channels corresponding to each input signal and the final output also has 38 channels. Each channels has two seconds of driver data which amounts to a 200 data points. This means that the original ten seconds data was split in five sequential datapoints. The rest of the parameters used are:
 
 - Kernel size = 16
 - Padding = 2
