@@ -126,13 +126,16 @@ ADAM: learning rate = 0.001
 learning rate = 0.1
 
 **Training:**
-epochs = .....
+epochs = 100 (For reducing training time).
 
 
 ## Results
 At the moment we are able to train the model but unfortunately there is an issue with the computation of the loss. It seems the losses very large and the network is never able to optimize. Upon inspection of the outputs we think it'd due to the weights getting very large. 
 
+<img align="center" src= "results.PNG" alt = "TCN block" style="height: 400px; width:400px;"/>
+
 The github repository can be found here: <a href="https://github.com/MarnixE/DL_reproducibility" title="Link to the repo"> https://github.com/MarnixE/DL_reproducibility</a>.
+
 
 
 ## Discussion and Conclusion
