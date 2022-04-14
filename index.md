@@ -6,14 +6,9 @@
   <li>Tishar Sinha (5277876) - <T.Sinha-2@student.tudelft.nl></li>
 </ol>
 
-## Structure
-- Background
-- Intro
-- Explaining the data: Pavan
-- Explanation (General architecture: TCN: Marcus, Triplet loss: Marnix, Haars: Tishar, LGBM classifier: Tishar)
-- Approach taken (Same architecture but Data missing -> Cross-validation: Pavan, What do we have / Assumptions used: Marcus)
-- Results / If it doesn't work -> our process so far / where we got stuck 
-- Discussion (can't replicate)
+## TO DO
+- Table with results
+- Add extra explanation on how data was split
 
 ## Introduction
 ### Background:
