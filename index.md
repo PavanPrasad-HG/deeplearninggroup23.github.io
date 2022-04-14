@@ -134,6 +134,7 @@ This is how the whole TCN sequence looks like:
 After the TCN we use batch normalization followed by a fully connected layer to embed the output into a 1 x 38 size for the classifier.
 
 The rest of the hyperparameters using for the model are:
+
 **Optimizer:**
 ADAM: learning rate = 0.001
 
