@@ -137,6 +137,8 @@ epochs = .....
 ## Results
 At the moment we are able to train the model but unfortunately there is an issue with the computation of the loss. It seems the losses very large and the network is never able to optimize. Upon inspection of the outputs we think it'd due to the weights getting very large. 
 
+The github repository can be found here: https://github.com/MarnixE/DL_reproducibility
+
 
 ## Discussion and Conclusion
 As can be seen from the results, we were not able to fully replicate the paper. This is because for the replication, we only had a snippet of the full dataset. To account for this, both the model and input data were altered. Namely, for the model a simpler version was selected as it would be more prone to overfitting on this small amount of data. Likwise, the input data was split into TBD seconds instead of the ten seconds used in the paper. This resulted in less variation between the different input data. Which made the classification more trivial, as the testing data is very similar to the training data (there can only be a maximum of 8 seconds of difference between the tested datapoint and the training datapoint). However, as the model complexity is decreased and there is fewer training data, the performance of the model still decreased. 
