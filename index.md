@@ -98,11 +98,9 @@ The hyperparemeter used in the classifier are:-
 #### Model assumptions
 The structure of our TCN was chosesn as follows: 
 We have 5 TCN blocks in total. Each block contains 2 times a 1D Convolution, Chomp(remove extra padding), Relu and Dropout. A visual representation is seen in the image below:
-![Image|width=400px](TCN_block.png)
-<!-- <p align="center">
-<img src= TCN_block.png/ width=20% height=20%>
-</p>
- -->
+<img src= "TCN_block.png" alt = "TCN block" style="height: 600px; width:400px;"/>
+
+
 The input of each block has 38 channels corresponding to each input signal and the final output also has 38 channels. Each channels has 10 seconds of driver data which amounts to a 1000 data points. The rest of the parameters used are:
 
 - Kernel size = 16
