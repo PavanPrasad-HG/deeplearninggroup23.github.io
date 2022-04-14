@@ -97,7 +97,7 @@ The hyperparemeter used in the classifier are:-
 
 #### Model assumptions
 The structure of our TCN was chosesn as follows: 
-We have 5 TCN blocks in total. Each block contains 2 times a 1D Convolution, Chomp(remove extra padding), Relu and Dropout. A visual representation is seen in the image below:
+We have 5 TCN blocks in total. Each block contains 2 times a 1D Convolution, Chomp(remove extra padding), Relu and Dropout. These parameter was choosen to duplicate the implementation of the paper as these were the parameter used in that paper.  A visual representation is seen in the image below:
 <img align="center" src= "TCN_block.png" alt = "TCN block" style="height: 600px; width:400px;"/>
 
 
