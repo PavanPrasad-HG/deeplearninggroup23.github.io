@@ -79,9 +79,10 @@ Here <img src="https://render.githubusercontent.com/render/math?math=\alpha"> is
 
 ### Haar Wavelet
 The haar wavelet transform is used as a method of indexing time series. Also known as DB1. This method is often better than discrete Fourier transform. The advantage it has over fourier transform is temporal resolution. It captures both frequency and  location information (location in time).  We use a Haar wavelet transformation to generates two vectors in the frequency domain. These vectors are cA and cD. Here cA is approximation coefficients vector and cD  is detail coefficients vector of the discrete wavelet transform The haar wavelet returns a tuple of cA and cD. Other application of Haar wavelet are de-noising and compression of signals and images. The vectors from Haar wavelet is then used as an input to a fully connected linear layer. The output then gets concatenated with the TCN output and fed to the  LightGBM classifier.
-<p align="center">
+![Image](haar.PNG)
+<!-- <p align="center">
 <img src= haar.PNG/ width=50% height=50%>
-</p>
+</p> -->
 
 ### LightGBM Classifier
 After training the embedded model the LightGBM classifier is used to classify amoung the 5 drivers. LightGBM is a gradient boosting framework based on decision tree algorithms which is useful for classification, ranking, etc. The main advantages of this classifiere are:
@@ -92,17 +93,20 @@ After training the embedded model the LightGBM classifier is used to classify am
 - Can handle large size of data
 
 LightGBM grows tree leaf-wise while other algorithms grow level-wise. It will choose the leaf with max delta loss to grow. When growing the same leaf. This leaf-wise growth helps it to reduce the loss more than level-wise algorithm.
-<p align="center">
+![Image](leafwise.PNG)
+<!-- <p align="center">
 <img src= leafwise.PNG/ width=70% height=70%>
-</p>
-<p align="center">
+</p> -->
+![Image](levewise.PNG)
+<!-- <p align="center">
 <img src= levewise.PNG/ width=70% height=70%>
 </p>
-
+ -->
 The hyperparemeter used in the classifier are:-
-<p align="center">
+![Image](levewise.PNG)
+<!-- <p align="center">
 <img src= hyperparam.PNG/ width=40% height=40%>
-</p>
+</p> -->
 
 
 ## Approach taken
@@ -110,11 +114,11 @@ The hyperparemeter used in the classifier are:-
 #### Model assumptions
 The structure of our TCN was chosesn as follows: 
 We have 5 TCN blocks in total. Each block contains 2 times a 1D Convolution, Chomp(remove extra padding), Relu and Dropout. A visual representation is seen in the image below:
-
-<p align="center">
+![Image](TCN_block.png)
+<!-- <p align="center">
 <img src= TCN_block.png/ width=40% height=40%>
 </p>
-
+ -->
 The input of each block has 38 channels corresponding to each input signal and the final output also has 38 channels. Each channels has 10 seconds of driver data which amounts to a 1000 data points. The rest of the parameters used are:
 
 - Kernel size = 16
@@ -123,10 +127,10 @@ The input of each block has 38 channels corresponding to each input signal and t
 - Dropout = 0.1
 
 This is how the whole TCN sequence looks like:
-
-<p align="center">
+![Image](TCN_sequence.png)
+<!-- <p align="center">
 <img src= TCN_sequence.png/ width=75% height=75%>
-</p>
+</p> -->
 
 
 ## Results
