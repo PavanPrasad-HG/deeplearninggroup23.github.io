@@ -43,10 +43,10 @@ The original dataset used by the paper contained a dataset where each driver spe
 
 The dataset is divided into groups as shown in the below figure to assess the impact of each group on the performance of the model. Pandas dataframe is used to load the model and divide into the sub-groups.
 
-![Image](Dataset_groups.png)
-<!-- <p align="center">
+<!-- ![Image](Dataset_groups.png) -->
+<p align="center">
 <img src= Dataset_groups.png/>
-</p> -->
+</p>
 
 The dataset is further constructed as triplets(x<sub>r</sub>, x<sub>p</sub> and x<sub>n</sub>) as required in triplet loss. Here x<sub>r</sub> denotes an anchor point, x<sub>p</sub> denotes a positive sample of the same driver as x<sub>r</sub>, and x<sub>n</sub> a negative sample from a different driver.
 In order to achieve that, we use the code attached below.
