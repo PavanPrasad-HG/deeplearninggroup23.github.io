@@ -5,9 +5,8 @@
 * Marcus Malak (4451570) - <m.m.h.g.malak@student.tudelft.nl>
 * Tishar Sinha (5277876) - <T.Sinha-2@student.tudelft.nl>
 
-[link](https://arxiv.org/abs/2102.05234)
+The link to the original paper can be found <a href="https://arxiv.org/abs/2102.05234" title="Link to the paper" >here</a>.
 
-<a href="https://arxiv.org/abs/2102.05234">link</a>
 ## TO DO
 - Table with results
 - Add extra explanation on how data was split
