@@ -87,8 +87,12 @@ After training the embedded model the LightGBM classifier is used to classify am
 - Can handle large size of data
 
 LightGBM grows tree leaf-wise while other algorithms grow level-wise. It will choose the leaf with max delta loss to grow. When growing the same leaf. This leaf-wise growth helps it to reduce the loss more than level-wise algorithm.
-![Image](leafwise.PNG| width=100)
-![Image](levewise.PNG| width=100)
+<p align="center">
+<img src= leafwise.PNG/ width=70% height=70%>
+</p>
+<p align="center">
+<img src= levewise.PNG/ width=70% height=70%>
+</p>
 
 
 
