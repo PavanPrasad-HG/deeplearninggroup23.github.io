@@ -49,9 +49,7 @@ The dataset is divided into groups as shown in the below figure to assess the im
 </p> -->
 
 The dataset is further constructed as triplets(x<sub>r</sub>, x<sub>p</sub> and x<sub>n</sub>) as required in triplet loss. Here x<sub>r</sub> denotes an anchor point, x<sub>p</sub> denotes a positive sample of the same driver as x<sub>r</sub>, and x<sub>n</sub> a negative sample from a different driver.
-In order to achieve that, we use the code attached below.
 
-![Image](triplet_data_split_code.png)
 <!-- <p align="center">
 <img src= triplet_data_split_code.png>
 </p> -->
