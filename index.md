@@ -10,8 +10,6 @@
 - Dicussion: Not enough data, Decrease or split channels (Marnix)
 
 
-
-
 ## Structure
 - Background
 - Intro
