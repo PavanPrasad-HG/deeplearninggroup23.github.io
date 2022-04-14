@@ -1,15 +1,10 @@
-## TASK DIVISION
-**CODE**
-- LGBM (Pavan)
-- Wavelet + FC layers (Tishar)
-- TCN (Marcus)
-
-**BLOG**
-- Explain data split (Pavan)
-- Update model layout (Marcus)
-- Results
-- Dicussion: Not enough data, Decrease or split channels (Marnix)
-
+### Group 23
+<ol>
+  <li>Pavan Prasad H.G. (5508053) - <p.p.h.guruprasad@student.tudelft.nl> </li>
+  <li>Marnix Enting (4659147) - <m.f.g.enting@student.tudelft.nl></li>
+  <li>Marcus Malak (4451570) - <m.m.h.g.malak@student.tudelft.nl></li>
+  <li>Tishar Sinha (5277876) - <T.Sinha-2@student.tudelft.nl></li>
+</ol>
 
 ## Structure
 - Background
@@ -150,3 +145,11 @@ At the moment we are able to train the model but unfortunately there is an issue
 
 ## Discussion and Conclusion
 As can be seen from the results, we were not able to fully replicate the paper. This is because for the replication, we only had a snippet of the full dataset. To account for this, both the model and input data were altered. Namely, for the model a simpler version was selected as it would be more prone to overfitting on this small amount of data. Likwise, the input data was split into TBD seconds instead of the ten seconds used in the paper. This resulted in less variation between the different input data. Which made the classification more trivial, as the testing data is very similar to the training data (there can only be a maximum of 8 seconds of difference between the tested datapoint and the training datapoint). However, as the model complexity is decreased and there is fewer training data, the performance of the model still decreased. 
+
+## Individual Contributions
+We did not keep track of individual time spent by each of the group member but we did work in pairs and the work were equally distributed between all. The person working on the specific part of the code worked on the blog for the same as well.
+
+- Marnix worked on researching about triplet loss and independent implementation of the same. He worked on the evaluation of the model post connection of all individual parameters.
+- Pavan worked on data processing and Light GBM classifier. He worked on the overall blog as well.
+- Marcus worked on the researching, implementation and blog of the Temporal Convolution Networks and batch normalization. 
+- Tishar worked on Haar wavelets and the fully connected layers
