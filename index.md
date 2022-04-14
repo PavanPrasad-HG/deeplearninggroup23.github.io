@@ -2,6 +2,7 @@
 **CODE**
 - LGBM (Pavan)
 - Wavelet + FC layers (Tishar)
+- TCN (Marcus)
 
 **BLOG**
 - Explain data split (Pavan)
