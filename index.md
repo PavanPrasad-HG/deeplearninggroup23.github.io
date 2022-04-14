@@ -145,7 +145,7 @@ Likewise, as can be seen from the ablation study. The results vary a lot per exc
 ## Individual Contributions
 We did not keep track of individual time spent by each of the group member but we did work in pairs and the work were equally distributed between all. The person working on the specific part of the code worked on the blog for the same as well.
 
-- Marnix worked on researching and implementation of the triplet loss and data extraction. He worked on the evaluation of the model post connection of all individual parameters.
+- Marnix worked on researching and implementation of the triplet loss and data generation/extraction. He worked on the evaluation of the model post connection of all individual parameters.
 - Pavan worked on data processing and Light GBM classifier. He worked on the overall blog as well.
 - Marcus worked on the researching, implementation and blog of the Temporal Convolution Networks and batch normalization. 
 - Tishar worked on Haar wavelets and the fully connected layers
