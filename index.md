@@ -114,7 +114,7 @@ The structure of our TCN was chosesn as follows:
 We have 5 TCN blocks in total. Each block contains 2 times a 1D Convolution, Chomp(remove extra padding), Relu and Dropout. A visual representation is seen in the image below:
 ![Image](TCN_block.png)
 <!-- <p align="center">
-<img src= TCN_block.png/ width=40% height=40%>
+<img src= TCN_block.png/ width=30% height=30%>
 </p>
  -->
 The input of each block has 38 channels corresponding to each input signal and the final output also has 38 channels. Each channels has 10 seconds of driver data which amounts to a 1000 data points. The rest of the parameters used are:
@@ -127,7 +127,7 @@ The input of each block has 38 channels corresponding to each input signal and t
 This is how the whole TCN sequence looks like:
 ![Image](TCN_sequence.png)
 <!-- <p align="center">
-<img src= TCN_sequence.png/ width=75% height=75%>
+<img src= TCN_sequence.png/ width=60% height=60%>
 </p> -->
 
 
